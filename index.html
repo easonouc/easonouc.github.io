@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://xn--wxs55j.xn--6qq986b3xl/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="baidu-site-verification" content="cYQCrA6JoP">
+<meta name="360-site-verification" content="bc6dff3954cca69853dcf964ee04c108">
+<title>Dong Meng,I Love You</title>
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="./mengDong/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="./mengDong/jquery.js"></script>
+<script type="text/javascript" src="./mengDong/garden.js"></script>
+<script type="text/javascript" src="./mengDong/functions.js"></script>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*2015—09-01, two young people met</span><br />
+			<span class="space"/><span class="comments">*2015-09-12, they fall in love with each other</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			Boy name = <span class="keyword">Mr</span> Yang<br />
+			Girl name = <span class="keyword">Miss</span> Meng<br />
+			<span class="comments">// They fell in love with each other. </span><br />
+			The boy loves the girl;<br />
+			<span class="comments">// They love each other.</span><br />
+			The girl loves the boy;<br />
+			<span class="comments">// AS time goes on.</span><br />
+			The boy can not live without the girl;<br />
+			<span class="comments">// At the same time.</span><br />
+			The girl can not  be separated from the boy;<br />
+			<span class="comments">// Whether it is rainy or windy, they miss each other.</span><br />
+			<span class="comments">// Whether in dreams or real life, they are in each other's heart.</span><br />
+			<span class="keyword">The boy is</span> very <span class="keyword">happy</span>;<br />
+			<span class="keyword">The girl</span> is also very <span class="keyword">happy</span>;<br />
+			<span class="placeholder"/><span class="comments">// Whether right now or in the future, </span><br />
+			<span class="placeholder"/><span class="comments">// They will always be in love.</span><br />
+			<span class="placeholder"/>The boy has a most simple dream: <br />
+			<span class="comments">// He wants the girl be happy in every single day!</span><br />
+			<br>
+			<br>
+			I want to say:<br />
+			Baby, I miss you so much, and i love you more than i can say !<br />
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					Baby, this is the time we spent together:
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					Yours<br/>
+					<div class="signature">--Pan Yang</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=2175282&auto=1&height=66"></iframe>
+</div>
+
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2015,7,30);
+together.setHours(21);
+together.setMinutes(32);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "get a higher version of browser, dear~~~"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
